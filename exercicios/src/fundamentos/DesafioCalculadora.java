@@ -18,10 +18,10 @@ public class DesafioCalculadora {
 		
 		// Lógica
 		double resultado = "+".equals(op) ? num1 + num2 : 0;
-		resultado = "-".equals(op) ? num1 - num2 : resultado;
-		resultado = "*".equals(op) ? num1 * num2 : resultado;
-		resultado = "/".equals(op) ? num1 / num2 : resultado;
-		resultado = "%".equals(op) ? num1 % num2 : resultado;
+		resultado = "-".equals(op) ? num1 - num2 : resultado;//se o resultado de op for igual a - vai executar esta linha
+		resultado = "*".equals(op) ? num1 * num2 : resultado;//se o resultado de op for igual a * vai executar esta linha
+		resultado = "/".equals(op) ? num1 / num2 : resultado;//se o resultado de op for igual a / vai executar esta linha
+		resultado = "%".equals(op) ? num1 % num2 : resultado;//se o resultado de op for igual a % vai executar esta linha
 		
 		System.out.printf("%.2f %s %.2f = %.2f",
 				num1, op, num2, resultado);
